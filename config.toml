@@ -1,0 +1,13 @@
+baseURL = "http://yoursite.example.com/"
+footnoteReturnLinkContents = "↩"
+title = "Example"
+
+[params]
+  AuthorName = "Jon Doe"
+  GitHubUser = "spf13"
+  ListOfFoo = ["foo1", "foo2"]
+  SidebarRecentLimit = 5
+  Subtitle = "Hugo is Absurdly Fast!"
+
+[permalinks]
+  post = "/:year/:month/:title/"
