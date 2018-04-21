@@ -1,13 +1,10 @@
-baseURL = "http://yoursite.example.com/"
-footnoteReturnLinkContents = "↩"
-title = "Example"
+[build]
+  Functions = "functions"
+  command = "jekyll run build"
+  publish = "_site"
+  
 
-[params]
-  AuthorName = "Jon Doe"
-  GitHubUser = "spf13"
-  ListOfFoo = ["foo1", "foo2"]
-  SidebarRecentLimit = 5
-  Subtitle = "Hugo is Absurdly Fast!"
-
-[permalinks]
-  post = "/:year/:month/:title/"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
